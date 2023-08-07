@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-3fxv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/kpiwko-tenant/my-app-2/devfile-sample-3fxv@sha256:60b572d30ce9ec345ee1517c43edfefdae60eb559b19c46492df0282f1fb526f
+        name: my-nodejs
+        resources: {}
+status: {}
